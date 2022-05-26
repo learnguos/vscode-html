@@ -1,6 +1,6 @@
 ## 说明
 
-- 一个 `vscode` 的 `html` 代码片段插件
+- 一个 `vscode` 的 `html` 代码提示插件
 - 包含了常用的 `html` 标签
 - 支持的页面：`vue`、`javascript`、`html`
 
