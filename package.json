@@ -1,0 +1,36 @@
+{
+  "name": "vscode-html",
+  "displayName": "vscode-html",
+  "description": "html代码片段",
+  "version": "1.0.0",
+  "publisher": "learnguo",
+  "keywords": [
+    "html"
+  ],
+  "repository": {
+    "url": "https://github.com/learnguos/vscode-html"
+  },
+  "icon": "vscode-html.png",
+  "engines": {
+    "vscode": "^1.27.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.code-snippets"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/javascript.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
