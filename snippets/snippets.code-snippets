@@ -1,1 +1,368 @@
-{}
+{
+  // 标题标签
+  "h1": {
+    "prefix": ["h1", "标题标签", "块级元素"],
+    "body": "<h1>$0</h1>"
+  },
+  "h2": {
+    "prefix": ["h2", "标题标签", "块级元素"],
+    "body": "<h2>$0</h2>"
+  },
+  "h3": {
+    "prefix": ["h3", "标题标签", "块级元素"],
+    "body": "<h3>$0</h3>"
+  },
+  "h4": {
+    "prefix": ["h4", "标题标签", "块级元素"],
+    "body": "<h4>$0</h4>"
+  },
+  "h5": {
+    "prefix": ["h5", "标题标签", "块级元素"],
+    "body": "<h5>$0</h5>"
+  },
+  "h6": {
+    "prefix": ["h6", "标题标签", "块级元素"],
+    "body": "<h6>$0</h6>"
+  },
+
+  // 段落标签
+  "p": {
+    "prefix": ["p", "段落标签", "块级元素"],
+    "body": "<p>$0</p>"
+  },
+
+  // 换行标签
+  "br": {
+    "prefix": ["br", "块级元素"],
+    "body": "<br />"
+  },
+
+  // 文本格式化标签
+  "strong语义化": {
+    "prefix": ["strong语义化", "文本格式化标签", "行内元素", "加粗"],
+    "body": "<strong>$0</strong>"
+  },
+  "b": {
+    "prefix": ["b", "文本格式化标签", "行内元素", "加粗"],
+    "body": "<b>$0</b>"
+  },
+  "em语义化": {
+    "prefix": ["em语义化", "文本格式化标签", "行内元素", "倾斜"],
+    "body": "<em>$0</em>"
+  },
+  "i": {
+    "prefix": ["i", "文本格式化标签", "行内元素", "倾斜"],
+    "body": "<i>$0</i>"
+  },
+  "del语义化": {
+    "prefix": ["del语义化", "文本格式化标签", "行内元素", "删除线"],
+    "body": "<del>$0</del>"
+  },
+  "s": {
+    "prefix": ["s", "文本格式化标签", "行内元素", "删除线"],
+    "body": "<s>$0</s>"
+  },
+  "ins语义化": {
+    "prefix": ["ins语义化", "文本格式化标签", "行内元素", "下划线"],
+    "body": "<ins>$0</ins>"
+  },
+  "u": {
+    "prefix": ["u", "文本格式化标签", "行内元素", "下划线"],
+    "body": "<u>$0</u>"
+  },
+
+  // div块级盒子
+  "div": {
+    "prefix": ["div", "块级元素"],
+    "body": "<div>$0</div>"
+  },
+
+  // span文本
+  "span": {
+    "prefix": ["span", "行内元素"],
+    "body": "<span>$0</span>"
+  },
+
+  // script
+  "script": {
+    "prefix": ["script"],
+    "body": "<script type=\"module\" src=\"\"></script>"
+  },
+
+  // style
+  "style": {
+    "prefix": ["style"],
+    "body": "<style></style>"
+  },
+
+  // 图像
+  "img": {
+    "prefix": ["img", "行内块元素"],
+    "body": [
+      "<!-- alt图片显示失败提示信息 title鼠标悬停提示 -->",
+      "<img scr=\"$0\" title=\"\" alt=\"\"></img>"
+    ]
+  },
+
+  // 超链接标签
+  "a": {
+    "prefix": ["a", "行内元素"],
+    "body": [
+      "<!-- target：_self内部链接/_blank内部链接 title鼠标悬停提示 -->",
+      "<a href=\"$1\" title=\"\" target=\"_self或_blank\">$0</a>"
+    ]
+  },
+
+  // 标签内容特殊字符
+  "空格": {
+    "prefix": ["&nbsp;", "空格", "字符"],
+    "body": "&nbsp;"
+  },
+  "小于号": {
+    "prefix": ["&lt;", "小于号", "字符"],
+    "body": "&lt;"
+  },
+  "大于号": {
+    "prefix": ["&gt;", "大于号", "字符"],
+    "body": "&gt;"
+  },
+  "和号": {
+    "prefix": ["&amp;", "和号", "字符"],
+    "body": "&amp;"
+  },
+  "人民币": {
+    "prefix": ["&yen;", "人民币", "字符"],
+    "body": "&yen;"
+  },
+  "版权": {
+    "prefix": ["&copy;", "版权", "字符"],
+    "body": "&copy;"
+  },
+  "注册商标": {
+    "prefix": ["&reg;", "注册商标", "字符"],
+    "body": "&reg;"
+  },
+  "摄氏度": {
+    "prefix": ["&deg;", "摄氏度", "字符"],
+    "body": "&deg;"
+  },
+  "正负号": {
+    "prefix": ["&plusmn;", "正负号", "字符"],
+    "body": "&plusmn;"
+  },
+  "乘号": {
+    "prefix": ["&times;", "乘号", "字符"],
+    "body": "&times;"
+  },
+  "除号": {
+    "prefix": ["&divide;", "除号", "字符"],
+    "body": "&divide;"
+  },
+  "平方": {
+    "prefix": ["&sup2;", "平方", "字符"],
+    "body": "&sup2;"
+  },
+  "立方": {
+    "prefix": ["&sup3;", "立方", "字符"],
+    "body": "&sup3;"
+  },
+
+  // 表格标签
+  "表格标签": {
+    "prefix": ["table", "表格标签"],
+    "body": [
+      "<table border=\"${1:边框大小}\" cellpadding=\"${2:单元格边框与单元格里面内容的左右两边宽度}\" cellspacing=\"${0:单元格之间的间距}\">",
+      "      <!-- 标题行 -->",
+      "      <thead>",
+      "        <!-- 行 -->",
+      "        <tr>",
+      "          <!-- 单元格 -->",
+      "          <th>1</th>",
+      "          <th>1</th>",
+      "          <th>1</th>",
+      "          <th>1</th>",
+      "        </tr>",
+      "      </thead>",
+      "",
+      "      <!-- 内容行 -->",
+      "      <tbody>",
+      "        <!-- 行 -->",
+      "        <tr>",
+      "          <!-- colspan向右合并两个单元格 -->",
+      "          <td colspan=\"2\">5</td>",
+      "          <td>7</td>",
+      "",
+      "          <!-- colspan向下两个单元格 -->",
+      "          <td rowspan=\"2\">12</td>",
+      "        </tr>",
+      "        <!-- 行 -->",
+      "        <tr>",
+      "          <td>9</td>",
+      "          <td>10</td>",
+      "          <td>11</td>",
+      "        </tr>",
+      "      </tbody>",
+      "</table>"
+    ]
+  },
+
+  // 列表
+  "无序列表": {
+    "prefix": ["ul", "无序列表", "列表", "块级元素"],
+    "body": ["<ul>", "<li>1</li>", "<ul>"]
+  },
+  "有序列表": {
+    "prefix": ["ol", "有序列表", "列表", "块级元素"],
+    "body": ["<ol>", "<li>1</li>", "<ol>"]
+  },
+  "自定义列表": {
+    "prefix": ["dl", "自定义列表", "列表", "块级元素"],
+    "body": ["<dl>", "<dt>标题</dt>", "<dd>1</dd>", "<dl>"]
+  },
+
+  // 表单
+  "form": {
+    "prefix": ["form"],
+    "body": [
+      "<form action=\"${1:用于指定接收并处理表单数据的服务器程序的url地址}\" method=\"${2:用于设置表单数据的提交方式，其取值为get或post}\" name=\"${0:用于指定表单的名称，以区分同一个页面中的多个表单域}\">",
+      "",
+      "</form>"
+    ]
+  },
+  "button": {
+    "prefix": ["button"],
+    "body": ["<!-- disabled为禁用 -->", "<button type disabled>$0</button>"]
+  },
+  "input~定义复选框": {
+    "prefix": ["input~定义复选框"],
+    "body": [
+      "<input type=\"checkbox\" name=\"定义input元素的名称\" />",
+      "<span>篮球</span>>",
+      "<!-- checked默认选择,hidden隐藏表单元素, disabled为禁用,name定义表单名字 -->",
+      "<input type=\"checkbox\" name=\"定义input元素的名称\" checked />",
+      "<span>足球</span>"
+    ]
+  },
+  "input~文件上传表单按钮": {
+    "prefix": ["input~文件上传表单按钮"],
+    "body": [
+      "<!-- hidden隐藏表单元素, disabled为禁用,name定义表单名字 , multiple 选择多个文件，h5新增 -->",
+      "<input type=\"file\" name=\"定义input元素的名称\" />"
+    ]
+  },
+  "input~密码输入框表单": {
+    "prefix": ["input~密码输入框表单"],
+    "body": [
+      "<!-- hidden隐藏表单元素, disabled为禁用,name定义表单名字, value默认输入框值,maxlength 最大字符长度 -->",
+      "<!-- autofocus自动聚焦属性 placeholder 提示信息 -->",
+      "<!-- autocomplete: off / on  on为打开浏览器自动填充 off为关闭浏览器自动填充-->",
+      "<input type=\"password\" name=\"定义input元素的名称\" />"
+    ]
+  },
+  "input~单选框": {
+    "prefix": ["input~单选框"],
+    "body": [
+      "<!-- hidden隐藏表单元素, disabled为禁用,name定义表单名字, checked默认选择-->",
+      "<!-- 单选框必须保持name属性值都一样 -->",
+      "<!-- label标签可与单选框进行关联 -->",
+      "<input type=\"radio\" name=\"定义input元素的名称\" id=\"sex\" checked />",
+      "<label for=\"sex\">男</label>",
+      "<input type=\"radio\" name=\"定义input元素的名称\" id=\"sex1\" />",
+      "<label for=\"sex1\">女</label>"
+    ]
+  },
+  "input~重置表单按钮": {
+    "prefix": ["input~重置表单按钮"],
+    "body": [
+      "<!-- hidden隐藏表单元素, disabled为禁用, value为内容-->",
+      "<input type=\"reset\" />"
+    ]
+  },
+  "input~输入框": {
+    "prefix": ["input~输入框"],
+    "body": [
+      "<!-- hidden隐藏表单元素, disabled为禁用,name定义表单名字, value默认输入框值,maxlength 最大字符长度-->",
+      "<!-- autofocus自动聚焦属性 placeholder 提示信息 -->",
+      "<!-- autocomplete: off / on  on为打开浏览器自动填充 off为关闭浏览器自动填充-->",
+      "<input type=\"text\" />"
+    ]
+  },
+  "input~下拉表单": {
+    "prefix": ["input~下拉表单"],
+    "body": [
+      "<select name=\"\">",
+      "<option value=\"\">选项1</option>",
+      "<option value=\"\">选项2</option>",
+      "<!-- selected=\"selected\"为默认选中项 -->",
+      "<option value=\"\" selected>选项3</option>",
+      "</select>"
+    ]
+  },
+
+  // html5新特性
+  "html5新特性~头部标签": {
+    "prefix": ["html5新特性~头部标签"],
+    "body": ["<header>$0</header>"]
+  },
+  "html5新特性~头部导航标签": {
+    "prefix": ["html5新特性~头部导航标签"],
+    "body": ["<nav>$0</nav>"]
+  },
+  "html5新特性~内容标签": {
+    "prefix": ["html5新特性~内容标签"],
+    "body": [
+      "<!-- 论坛帖子 博客文章 新闻故事 评论 -->",
+      "<article>$0</article>"
+    ]
+  },
+  "html5新特性~定义文档某个区域": {
+    "prefix": ["html5新特性~定义文档某个区域"],
+    "body": [
+      "<!--  定义了文档的某个区域。比如章节、头部、底部或者文档的其他区域 -->",
+      "<section>$0</section>"
+    ]
+  },
+  "html5新特性~内容侧栏标签": {
+    "prefix": ["html5新特性~内容侧栏标签"],
+    "body": ["<!-- 可用作文章的侧栏 -->", "    <aside>$0</aside>"]
+  },
+  "html5新特性~尾部标签": {
+    "prefix": ["html5新特性~尾部标签"],
+    "body": ["<footer>$0</footer>"]
+  },
+  "html5新特性~视频标签": {
+    "prefix": ["html5新特性~视频标签"],
+    "body": [
+      "<!-- autoplay自动播放，谷歌浏览器需要添加muted属性才有效果 -->",
+      "<!-- controls向用户显示播放控件 width 设置播放宽度 height 设置播放高度  -->",
+      "<!-- loop 循环播放  preload: auto(预先加载视频)或none(不应加载视频)如果有了autoplay 就忽略该属性-->",
+      "<!-- poster 加载等待的画面图片 muted 静音播放 -->",
+      "<video src=\"文件地址\" controls></video>"
+    ]
+  },
+  "html5新特性~音乐标签": {
+    "prefix": ["html5新特性~音乐标签"],
+    "body": [
+      "<!-- <audio> 元素支持的3种文件格式：MP3、Wav、Ogg -->",
+      "<!-- autoplay 自动播放 controls 显示播放控件 loop 循环播放 -->",
+      "<!-- muted 静音播放 -->",
+      "<audio src=\"文件地址\"></audio>"
+    ]
+  },
+  "html5新特性~日期类型表单": {
+    "prefix": ["html5新特性~日期类型表单"],
+    "body": ["<input type=\"date\" name=\"定义input元素的名称\" />"]
+  },
+  "html5新特性~时间类型表单": {
+    "prefix": ["html5新特性~时间类型表单"],
+    "body": ["<input type=\"time\" name=\"定义input元素的名称\" />"]
+  },
+  "html5新特性~月类型表单": {
+    "prefix": ["html5新特性~月类型表单"],
+    "body": ["<input type=\"month\" name=\"定义input元素的名称\" />"]
+  },
+  "html5新特性~颜色选择器表单": {
+    "prefix": ["html5新特性~颜色选择器表单"],
+    "body": ["<input type=\"color\" name=\"定义input元素的名称\" />"]
+  }
+}

@@ -68,7 +68,7 @@
 
 #### 换行标签
 
-- 呼出关键字：`bv` `块级元素`
+- 呼出关键字：`br` `块级元素`
 
   - Snipped 代码
 
@@ -126,7 +126,7 @@
     "body": "<s>$0</s>"
     ```
 
-- 呼出关键字：`ins` `文本格式化标签` `行内元素` `下划线`
+- 呼出关键字：`ins语义化` `文本格式化标签` `行内元素` `下划线`
 
   - Snipped 代码
 
@@ -159,7 +159,7 @@
   - Snipped 代码
 
     ```javascript
-    "body": "<div>$0</div>"
+    "body": "<span>$0</span>"
     ```
 
 #### script
@@ -189,7 +189,10 @@
   - Snipped 代码
 
     ```javascript
-    "body": "<img scr=\"$0\" title=\"\" alt=\"\"></img>"
+    "body": [
+          "<!-- alt图片显示失败提示信息 title鼠标悬停提示 -->",
+          "<img scr=\"$0\" title=\"\" alt=\"\"></img>"
+        ]
     ```
 
 #### 超链接标签
@@ -199,7 +202,10 @@
   - Snipped 代码
 
     ```javascript
-    "body": "<a href=\"$1\" title=\"\" target=\"_self\">$0</a>"
+    "body": [
+          "<!-- target：_self内部链接/_blank内部链接 title鼠标悬停提示 -->",
+          "<a href=\"$1\" title=\"\" target=\"_self或_blank\">$0</a>"
+        ]
     ```
 
 #### 标签内容特殊字符
@@ -300,7 +306,7 @@
     "body": "&sup2;"
     ```
 
-- 呼出关键字：`&sup3;`  `平方`  `字符`
+- 呼出关键字：`&sup3;`  `立方`  `字符`
 
   - Snipped 代码
 
@@ -314,7 +320,7 @@
 
   - Snipped 代码
 
-    ```javascript
+    ```
     "body": [
           "<table border=\"${1:边框大小}\" cellpadding=\"${2:单元格边框与单元格里面内容的左右两边宽度}\" cellspacing=\"${0:单元格之间的间距}\">",
           "      <!-- 标题行 -->",
