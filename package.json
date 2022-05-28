@@ -2,7 +2,7 @@
   "name": "vscode-html",
   "displayName": "vscode-html",
   "description": "html代码提示",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "learnguo",
   "keywords": [
     "html"
