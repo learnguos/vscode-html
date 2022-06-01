@@ -1,7 +1,7 @@
 {
   "name": "vscode-html",
   "displayName": "vscode-html",
-  "description": "html代码提示",
+  "description": "html代码片段提示插件",
   "version": "1.1.1",
   "publisher": "learnguo",
   "keywords": [

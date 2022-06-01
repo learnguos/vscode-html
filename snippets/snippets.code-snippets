@@ -86,13 +86,13 @@
   // script
   "script": {
     "prefix": ["script"],
-    "body": "<script type=\"module\" src=\"\"></script>"
+    "body": "<script type=\"module\" src=\"\">$0</script>"
   },
 
   // style
   "style": {
     "prefix": ["style"],
-    "body": "<style></style>"
+    "body": "<style>$0</style>"
   },
 
   // 图像
@@ -100,7 +100,7 @@
     "prefix": ["img", "行内块元素"],
     "body": [
       "<!-- alt图片显示失败提示信息 title鼠标悬停提示 -->",
-      "<img scr=\"$0\" title=\"\" alt=\"\"></img>"
+      "<img scr=\"\" title=\"\" alt=\"\">$0</img>"
     ]
   },
 
@@ -209,15 +209,15 @@
   // 列表
   "无序列表": {
     "prefix": ["ul", "无序列表", "列表", "块级元素"],
-    "body": ["<ul>", "<li>1</li>", "<ul>"]
+    "body": ["<ul>", "<li>$0</li>", "<ul>"]
   },
   "有序列表": {
     "prefix": ["ol", "有序列表", "列表", "块级元素"],
-    "body": ["<ol>", "<li>1</li>", "<ol>"]
+    "body": ["<ol>", "<li>$0</li>", "<ol>"]
   },
   "自定义列表": {
     "prefix": ["dl", "自定义列表", "列表", "块级元素"],
-    "body": ["<dl>", "<dt>标题</dt>", "<dd>1</dd>", "<dl>"]
+    "body": ["<dl>", "<dt>标题</dt>", "<dd>$0</dd>", "<dl>"]
   },
 
   // 表单

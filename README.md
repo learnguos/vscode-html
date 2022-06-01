@@ -1,7 +1,6 @@
 ## 说明
 
-- 一个 `vscode` 的 `html` 代码提示插件
-- 包含了常用的 `html` 标签
+- 一个 `vscode` 的 `html` 代码片段提示插件
 - 支持的页面：`vue`、`javascript`、`html`
 
 ## 使用教程
@@ -169,7 +168,7 @@
   - Snipped 代码
 
     ```javascript
-    "body": "    <script type=\"module\" src=\"\"></script>"
+    "body": "<script type=\"module\" src=\"\">$0</script>"
     ```
 
 #### style
@@ -179,7 +178,7 @@
   - Snipped 代码
 
     ```javascript
-    "body": "<style></style>"
+    "body": "<style>$0</style>"
     ```
 
 #### 图像
@@ -191,7 +190,7 @@
     ```javascript
     "body": [
           "<!-- alt图片显示失败提示信息 title鼠标悬停提示 -->",
-          "<img scr=\"$0\" title=\"\" alt=\"\"></img>"
+          "<img scr=\"\" title=\"\" alt=\"\">$0</img>"
         ]
     ```
 
@@ -364,7 +363,7 @@
   - Snipped 代码
 
     ```javascript
-    "body": ["<ul>", "<li>1</li>", "<ul>"]
+    "body": ["<ul>", "<li>$0</li>", "<ul>"]
     ```
 
 - 呼出关键字：`ol`  `有序列表`  `列表` `块级元素`
@@ -372,7 +371,7 @@
   - Snipped 代码
 
     ```javascript
-    "body": ["<ol>", "<li>1</li>", "<ol>"]
+    "body": ["<ol>", "<li>$0</li>", "<ol>"]
     ```
 
 - 呼出关键字：`dl`  `自定义列表`  `列表` `块级元素`
@@ -380,7 +379,7 @@
   - Snipped 代码
 
     ```javascript
-    "body": ["<dl>", "<dt>标题</dt>", "<dd>1</dd>", "<dl>"]
+     "body": ["<dl>", "<dt>标题</dt>", "<dd>$0</dd>", "<dl>"]
     ```
 
 #### 表单
